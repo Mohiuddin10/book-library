@@ -8,6 +8,12 @@
     <title>Book Library</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        #spinner {
+            display: none;
+            margin: auto;
+        }
+    </style>
 
 </head>
 
@@ -20,17 +26,23 @@
         <button class="m-1" onclick="searchBook()">Search</button>
 
     </div>
+    <!-- spinner  -->
+
+    <div id="spinner" class="spinner-grow text-danger " role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
     <!-- search result count  -->
     <p id="result-count"></p>
-    <!-- booklist start  -->
+    <!-- book search list area start  -->
     <div id="bookList">
         <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
 
         </div>
 
     </div>
-    <!-- booklist end  -->
-    <script src="api.js"></script>
+    <!-- book search list area end  -->
+    <script src="api2.js"></script>
     <script src="<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
